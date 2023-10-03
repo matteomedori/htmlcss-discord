@@ -234,40 +234,41 @@ MAIN
 --------
 */
 
-.first-section {
-  padding: 55px 0;
-}
-
-.second-section,
-.third-section,
-.fourth-section {
+main .section {
   padding: 50px 0;
 }
 
-.second-section,
-.fourth-section {
+main .section:nth-of-type(2),
+main .section:nth-of-type(4) {
   background-color: #d3d3d3;
 }
 
-.firstsect-contain,
-.secondsect-contain,
-.thirdsect-contain,
-.fourthsect-contain {
+.section-container {
   max-width: 1250px;
   margin: 0 auto;
   display: flex;
 }
 
-.firstsect-contain > div:first-child,
-.thirdsect-contain > div:first-child,
-.secondsect-contain > div:last-child {
+.big-column {
   flex-grow: 1.5;
 }
 
-.firstsect-contain > div:last-child,
-.thirdsect-contain > div:last-child,
-.secondsect-contain > div:first-child,
-.fourthsect-contain > div {
+.small-column {
+  flex-grow: 1;
+}
+
+.small-column h2 {
+  font-size: 40px;
+  text-align: left;
+  padding: 50px 180px 50px 50px;
+}
+
+.small-column p {
+  text-align: left;
+  padding: 0 180px 50px 50px;
+}
+
+main .section:nth-of-type(4) > div {
   flex-grow: 1;
 }
 
