@@ -240,7 +240,7 @@ main .section {
 
 main .section:nth-of-type(2),
 main .section:nth-of-type(4) {
-  background-color: #d3d3d3;
+  background-color: #f6f6f6;
 }
 
 .section-container {
@@ -260,7 +260,7 @@ main .section:nth-of-type(4) {
 .small-column h2 {
   font-size: 40px;
   text-align: left;
-  padding: 50px 180px 50px 50px;
+  padding: 50px 180px 30px 50px;
 }
 
 .small-column p {
@@ -268,8 +268,30 @@ main .section:nth-of-type(4) {
   padding: 0 180px 50px 50px;
 }
 
+main .section:nth-of-type(4) {
+  text-align: center;
+}
+
 main .section:nth-of-type(4) > div {
   flex-grow: 1;
+}
+
+main .section:nth-of-type(4) h2 {
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+main .section:nth-of-type(4) p {
+  padding: 0 150px;
+}
+
+main .section:nth-of-type(4) h3 {
+  padding: 50px;
+}
+
+main .section:nth-of-type(4) .bottone {
+  background-color: #7289da;
+  color: white;
 }
 
 /*
