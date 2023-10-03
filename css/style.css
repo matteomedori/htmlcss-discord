@@ -1,0 +1,326 @@
+/*
+--------
+RESET
+--------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+--------
+DEBUG
+--------
+*/
+.debug .nav-section {
+  background-color: #add8e6;
+}
+
+.debug .text-section {
+  height: 520px;
+  background-color: #00008b;
+}
+
+.debug .navigation {
+  background-color: #daa520;
+}
+
+.debug .navigation > div {
+  border: 3px dashed black;
+}
+
+.debug .text-section > div {
+  background-color: #ee82ee;
+  height: 420px;
+}
+
+.debug .text-section > .text {
+  border: 3px dashed black;
+}
+
+.debug .sect > div {
+  border: 3px dashed black;
+}
+
+.debug .first-section {
+  height: 630px;
+}
+
+.debug .firstsect-contain {
+  height: 520px;
+}
+
+.debug .firstsect-contain > div:first-child,
+.debug .thirdsect-contain > div:first-child {
+  background-color: #1e90ff;
+}
+
+.debug .firstsect-contain > div:last-child,
+.debug .thirdsect-contain > div:last-child {
+  background-color: #ffc0cb;
+}
+
+.debug .second-section,
+.debug .third-section {
+  height: 620px;
+}
+
+.debug .secondsect-contain,
+.debug .thirdsect-contain {
+  height: 520px;
+}
+
+.debug .secondsect-contain > div:first-child {
+  background-color: #ffc0cb;
+}
+
+.debug .secondsect-contain > div:last-child {
+  background-color: #1e90ff;
+}
+
+.debug .fourth-section {
+  height: 1040px;
+}
+
+.debug .fourthsect-contain {
+  height: 940px;
+}
+
+.debug .fourthsect-contain > div {
+  background-color: #228b22;
+}
+
+.debug .footer-section {
+  height: 650px;
+}
+
+.debug .footersect-contain {
+  height: 600px;
+}
+
+.debug .footer-left-column {
+  background-color: #f08080;
+  border: 3px dashed black;
+}
+
+.debug .footer-right-column {
+  background-color: #20b2aa;
+}
+
+.debug .footer-end {
+  height: 115px;
+}
+
+.debug .footer-end-contain {
+  height: 80px;
+  background-color: #7fffd4;
+}
+
+.debug button {
+  border: 3px dashed black;
+}
+
+/*
+--------
+COMMON
+--------
+*/
+
+body {
+  font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.bottone {
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+/*
+--------
+HEADER
+--------
+*/
+
+header {
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  color: white;
+}
+
+.nav-section {
+  padding: 15px 0;
+}
+
+.navigation {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#logo,
+.login {
+  flex-grow: 1;
+}
+
+.links {
+  flex-grow: 3;
+}
+
+.login {
+  text-align: end;
+}
+
+.navigation > div {
+  padding: 10px;
+}
+
+ul.link-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul.link-list > li {
+  margin: 0 20px;
+}
+
+.text-section {
+  padding: 100px 0;
+}
+
+.text-section > .text {
+  max-width: 945px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 0 40px 40px 40px;
+  font-size: 40px;
+}
+
+p {
+  line-height: 30px;
+  text-align: center;
+  padding: 0 100px;
+}
+
+.text-section .text a:last-of-type {
+  background-color: black;
+  color: white;
+}
+
+.header-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.header-buttons .bottone {
+  margin: 0 5px;
+}
+
+/*
+--------
+MAIN
+--------
+*/
+
+.first-section {
+  padding: 55px 0;
+}
+
+.second-section,
+.third-section,
+.fourth-section {
+  padding: 50px 0;
+}
+
+.second-section,
+.fourth-section {
+  background-color: #d3d3d3;
+}
+
+.firstsect-contain,
+.secondsect-contain,
+.thirdsect-contain,
+.fourthsect-contain {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.firstsect-contain > div:first-child,
+.thirdsect-contain > div:first-child,
+.secondsect-contain > div:last-child {
+  flex-grow: 1.5;
+}
+
+.firstsect-contain > div:last-child,
+.thirdsect-contain > div:last-child,
+.secondsect-contain > div:first-child,
+.fourthsect-contain > div {
+  flex-grow: 1;
+}
+
+/*
+--------
+FOOTER
+--------
+*/
+
+footer {
+  background-color: #23272a;
+}
+
+.footer-section {
+  padding: 10px 0 40px 0;
+  border-bottom: 3px solid white;
+}
+
+.footersect-contain {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer-left-column {
+  max-width: 370px;
+  flex-grow: 1;
+}
+
+.footer-right-column {
+  flex-grow: 1;
+  display: flex;
+}
+
+.footer-right-column > div {
+  flex-grow: 1;
+  border: 3px dashed white;
+}
+
+.footer-end {
+  padding-top: 35px;
+}
+
+.footer-end-contain {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  height: 35px;
+  padding: 5px 10px;
+  background-color: #ffb6c1;
+}
