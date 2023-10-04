@@ -64,6 +64,10 @@ header .container {
   padding: 15px 0;
 }
 
+#logo {
+  display: block;
+}
+
 #logo,
 .login {
   flex-grow: 1;
@@ -242,12 +246,12 @@ footer .social * {
 
 .footer-left-column .language {
   margin-bottom: 20px;
-  height: 15px;
 }
 
 .footer-left-column .language img {
-  height: 100%;
+  width: 25px;
   margin-right: 10px;
+  vertical-align: bottom;
 }
 
 /*---footer-end---*/
@@ -260,4 +264,15 @@ footer .social * {
 .footer-end .button {
   background-color: #7289da;
   color: white;
+}
+
+/*-----wave-----*/
+.wave {
+  height: 50px;
+  background-image: url(../img/wave.svg);
+  opacity: 0.04;
+}
+
+.wave.reverse {
+  transform: scale(1, -1);
 }
